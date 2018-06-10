@@ -1,0 +1,10 @@
+---
+- hosts: all
+  gather_facts: false
+  become: yes
+  tasks:
+    - name: install apache
+      apt: 
+        name: apache2 
+        state: absent
+         

@@ -1,0 +1,10 @@
+---
+- hosts: machine1
+  gather_facts: true
+  become: yes
+  tasks:
+        - name: install java
+          apt: name=openjdk-8-jdk state=present
+
+        
+

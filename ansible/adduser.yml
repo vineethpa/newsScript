@@ -1,0 +1,12 @@
+---
+- hosts: all
+  gather_facts: false
+  become: yes
+  tasks:
+  - name: creating user
+    user:
+      name: "{{item}}"
+      group: sudo
+    with_items:
+      - vin1
+      - vin2

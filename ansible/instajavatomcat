@@ -1,0 +1,7 @@
+---
+- hosts: machine1
+  gather_facts:true
+  become:yes
+  tasks:
+        - name: install java&&install tomcat
+

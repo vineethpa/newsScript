@@ -1,0 +1,4 @@
+[web]
+18.218.230.116 ansible_ssh_private_key_file=~/Downloads/vineeth.pem ansible_ssh_user=ubuntu
+
+
